@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="80dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_input_layout_username"
+        android:background="@android:color/transparent"
+        android:hint="id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@color/white"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_input_layout_user_id"
+        android:background="@android:color/transparent"
+        android:hint="email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/button_insert"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="insert data" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="update data" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="delete data" />
+
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="read data" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+</RelativeLayout>
